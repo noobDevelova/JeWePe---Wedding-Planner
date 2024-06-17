@@ -1,8 +1,8 @@
 <?php
 class App
 {
-    protected $controller = 'AuthController';
-    protected $method = 'login';
+    protected $controller = 'LandingController';
+    protected $method = 'index';
     protected $params = [];
 
     public function __construct()
@@ -35,7 +35,7 @@ class App
         }
         $this->params = $url ? array_values($url) : [];
 
-        call_user_func([$this->controller, $this->method], $this->params);
+        call_user_func_array([$this->controller, $this->method], $this->params);
     }
 
 
@@ -44,9 +44,9 @@ class App
         if (isset($_GET['url'])) {
             return explode('/', filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL));
         }
-
         if (isset($_GET['controller']) && isset($_GET['action'])) {
             $url = [$_GET['controller'], $_GET['action']];
+            // Jika ada parameter tambahan selain controller dan action
             foreach ($_GET as $key => $value) {
                 if ($key !== 'controller' && $key !== 'action') {
                     $url[] = $value;
@@ -54,5 +54,6 @@ class App
             }
             return $url;
         }
+        return [];
     }
 }

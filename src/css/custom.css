@@ -1,0 +1,20 @@
+.product_image {
+    width: 30%;
+}
+
+.vertical-middle {
+    vertical-align: middle;
+}
+
+.img-wrapper {
+  text-align: center;
+}
+
+.img-wrapper > img {
+    width: 40%;
+    text-align: center;
+}
+/* 
+.wrapper {
+    flex-direction: row;
+} */
