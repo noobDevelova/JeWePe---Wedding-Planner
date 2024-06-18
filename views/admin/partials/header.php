@@ -73,7 +73,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="index.php?controller=order&action=index">
+                <a class="nav-link collapsed" href="index.php?controller=laporan&action=index">
                     <i class="fas fa-fw fa-chart-bar"></i>
                     <span>Laporan</span>
                 </a>

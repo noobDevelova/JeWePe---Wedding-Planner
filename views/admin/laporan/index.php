@@ -1,8 +1,8 @@
 <?php include __DIR__ . '/../partials/header.php'; ?>
-<h1>Daftar Order</h1>
+<h1>Daftar Laporan</h1>
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">List Order</h6>
+        <h6 class="m-0 font-weight-bold text-primary">List Laporan</h6>
     </div>
     <div class="card-body">
         <div class="table-responsive">
